@@ -24,13 +24,8 @@
 }
 
 @font-face {
-
 	font-family: 'Kreadon';
-
-	src: local('Kreadon.ttf'),
-
-		url(/HTML_project_1/passport/Kreadon.ttf);
-
+	url(/HTML_project_1/passport/Kreadon.ttf);
 }
 
 .vidanstr1{
