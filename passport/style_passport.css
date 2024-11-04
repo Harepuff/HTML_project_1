@@ -3,14 +3,14 @@
 	margin: 0px;
 }
 
-#main_fon{
+#main_fon {
 
 	height: 734px;
 	background-image:url(/passport/fon.jpg);
 	background-repeat: no-repeat;
 }
 
-#pass_title{
+#pass_title {
 	padding-top: 41px;
 	padding-left: 60px;
 }
@@ -121,3 +121,4 @@
 	word-spacing: 0.7em;
 	font-size: 20px;
 }
+
