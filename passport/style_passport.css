@@ -6,7 +6,7 @@
 #main_fon {
 
 	height: 734px;
-	background-image:url(./passport/fon.jpg);
+	background-image:url(fon.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -29,7 +29,7 @@
 
 	src: local('Kreadon.ttf'),
 
-		url(/passport/Kreadon.ttf);
+		url(Kreadon.ttf);
 
 }
 
