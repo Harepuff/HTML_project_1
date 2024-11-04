@@ -1,0 +1,123 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#main_fon{
+
+	height: 734px;
+	background-image:url(/passport/fon.jpg);
+	background-repeat: no-repeat;
+}
+
+#pass_title{
+	padding-top: 41px;
+	padding-left: 60px;
+}
+
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: italic;
+  font-style: normal;
+  letter-spacing: 0.8em;
+  word-spacing: 0.25em;
+}
+
+@font-face {
+
+	font-family: 'Kreadon';
+
+	src: local('Kreadon.ttf'),
+
+		url(/passport/Kreadon.ttf);
+
+}
+
+.vidanstr1{
+	font-family: 'Kreadon';
+	padding-top: 20px;
+	padding-left: 100px;
+	font-size: 20px;
+}
+
+.vidanstr2{
+	font-family: 'Kreadon';
+	padding-top: 10px;
+	padding-left: 150px;
+	word-spacing: 0.65em;
+	font-size: 20px;
+}
+
+.vidanstrdata{
+	font-family: 'Kreadon';
+	padding-top: 37px;
+	padding-left: 65px;
+	word-spacing: 0.65em;
+	float: left;
+	font-size: 20px;
+}
+
+.vidanstrcode{
+	font-family: 'Kreadon';
+	padding-top: 37px;
+	padding-left: 295px;
+	word-spacing: 0.65em;
+	font-size: 20px;
+}
+
+.podpis{
+	padding-top: 30px;
+	padding-left: 55px;
+	float: left;
+}
+
+.podpis1{
+	padding-top: 50px;
+	padding-left: 115px;
+	height: 70px;
+}
+
+.passfoto{
+	padding-top: 120px;
+	padding-left: 22px;
+	height: 200px;
+	float: left;
+}
+
+.hfamilia{
+	padding-top: 100px;
+	padding-left: 230px;
+	font-size: 20px;
+}
+
+.hname{
+	padding-top: 35px;
+	padding-left: 250px;
+	font-size: 20px;
+}
+
+.hfname{
+	padding-top: 5px;
+	padding-left: 230px;
+	font-size: 20px;
+}
+
+.hpol{
+	padding-top: 5px;
+	padding-left: -10px;
+	float: left;
+	font-size: 17px;
+}
+
+.hborn{
+	padding-top: -5px;
+	padding-left: 285px;
+	font-size: 20px;
+}
+
+.hpborn1{
+	padding-top: 6px;
+	padding-left:240px;
+	word-spacing: 0.7em;
+	font-size: 20px;
+}
