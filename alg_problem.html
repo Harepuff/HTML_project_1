@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Решение алгоритмической задачи</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="index.html">Главная страница</a>
+        <a href="lists.html" title="Списки">Список товаров</a>
+        <a href="table.html">Таблица</a>
+        <a href="personal_data.html" title="Отправка личных данных">Обратная связь</a>
+        <a href="original_data.html" title="Отправка оригинальных данных">Заказать у нас</a>
+        <a href="pink_list.html" class="imag"><img src="img/mish.png" height="46"></a>
+        <a href="index.html#head">Ссылка на закладку</a>
+        <br><br><br>
+        <a href="passport.html">Паспорт</a>
+        <a href="passport_dom.html" title="Скриншот">DOM (паспорт)</a>
+        <a href="passport_change.html">Паспорт (изменяющийся)</a>
+        <a class="active" href="alg_problem.html">Алгоритмическая задача</a>
+        <a href="https://www.hse.ru/" target="_blank">Внешняя ссылка</a>
+
+    </div>
+<p>Вычислить x при заданном значении A:
+    <ul style="font-size: 25px;">
+        <li style="padding-bottom: 10px;">A &lt; 61: x = A</li>
+        <li style="padding-bottom: 10px;">61 &#8804 A &#8804 100: x = A<sup>4</sup></li>
+        <li>A &gt; 100: x = 0</li>
+    </ul>
+
+    <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank" onsubmit="prepareSearchQuery()">
+        <input type="hidden" name="q" id="searchQuery" value="search">
+        <p>Описание задачи для поисковика:
+            <br>
+            <textarea cols="40" rows="4" id="task" name="formulation">Вычислить x при заданном значении A:
+A &lt; 61: x = A
+61 &#8804 A &#8804 100: x = A^4
+A &gt; 100: x = 0</textarea></p>
+
+<p>A: <input id="a" name="a" type="number" style="width: 60px;" oninput="calculateX()"></p>
+<p>X: <input id="x" name="x" type="text" readonly style="width: 100px;"></p>
+
+<button type="submit" name="submit">Отправить данные</button>
+        
+    </form>
+
+<script>
+    function calculateX() {
+        const a = parseFloat(document.getElementById('a').value);
+        let x = a < 61 ? a : (a <= 100 ? Math.pow(a, 4) : 0);
+        document.getElementById('x').value = x;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body { /* стили страниц в общем */
+    background-color: rgb(255, 241, 224);
+    margin: auto;
+}
+
+p {
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ol {
+    font-size: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ol > li { /* отступы между пунктами нумерованного*/
+    margin-bottom: 30px;
+}
+
+a {
+    outline: none;
+    padding: 2px 1px 0;
+    color: #000000
+}
+
+.topnav { /* навигация в общем */
+    background-color: #f4a5ff64;
+    overflow: hidden;
+}
+
+.topnav a { /* стиль ссылок навигации */
+    float: left;
+    color: #000000;
+    outline: none;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    border-right: 4px solid #cd81ff;
+}
+
+.topnav a:hover { /* стиль ссылок навигации при наведении */
+    background-color: #c3f2ff;
+    color: rgb(0, 0, 0);
+}
+
+.topnav a.active { /* стиль активной ссылки навигации */
+    background-color: #e689fb;
+    color: #000000;
+}
+
+.topnav a.imag { /* отдельный стиль для ссылки-картинки */
+    padding: 0
+}
+
+button {
+    background-color: #ffcbf3;
+    border-radius: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }

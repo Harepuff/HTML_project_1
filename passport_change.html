@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="passport/style_passport.css">
+	<title>Изменяем кириллицу на латиницу по клику</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Главная страница</a>
+        <a href="lists.html" title="Списки">Список товаров</a>
+        <a href="table.html">Таблица</a>
+        <a href="personal_data.html" title="Отправка личных данных">Обратная связь</a>
+        <a href="original_data.html" title="Отправка оригинальных данных">Заказать у нас</a>
+        <a href="pink_list.html" class="imag"><img src="img/mish.png" height="46"></a>
+        <a href="index.html#head">Ссылка на закладку</a>
+        <br><br><br>
+        <a href="passport.html">Паспорт</a>
+        <a href="passport_dom.html" title="Скриншот">DOM (паспорт)</a>
+        <a class="active" href="passport_change.html">Паспорт (изменяющийся)</a>
+        <a href="alg_problem.html">Алгоритмическая задача</a>
+        <a href="https://www.hse.ru/" target="_blank">Внешняя ссылка</a>
+
+    </div>
+    <div id="main_fon">
+
+        <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+        <div id="page_top">
+            <p class="vidanstr1">ГУ ВМД РОССИИ ПО Г.МОСКВЕ</p>
+            <br>
+            <p class="vidanstrdata">05.04.2005</p>
+            <p class="vidanstrcode">123-456</p>
+            <img class="podpis" src="passport/podpis1.png">
+            <img class="podpis1" src="passport/podpis.png">
+        </div>
+    
+        <div id="page_bottom">
+            <img class="passfoto" src="passport/foto.jpg">
+            <p class="hfamilia" id="second_name">ЖОЛТИКОВА</p>
+            <p class="hname" id="name">КСЕНИЯ</p>
+            <p class="hfname">РОМАНОВНА 
+                <span id="change" style="padding-left: 300px;">⚝ Изменяем на латиницу имя, фамилию и дату ⚝</span></p>
+            <p class="hpol">ЖЕН.</p>
+            <p class="hborn" id="date">05.04.2005</p>
+            <p class="hpborn1">ГОР.МОСКВА</p>
+    
+        </div>
+    
+    </div>
+    <script>
+        const originalData = {
+            second_name: "ЖОЛТИКОВА",
+            name: "КСЕНИЯ",
+            date: "05.04.2005"
+        };
+
+        const newData = {
+            second_name: "ZHOLTIKOVA",
+            name: "KSENIIA",
+            date: "V.IV.MMV"
+        };
+
+        let isOriginal = true;
+
+        document.getElementById("change").addEventListener("click", () => {
+            const data = isOriginal ? newData : originalData;
+            Object.keys(data).forEach(id => document.getElementById(id).innerText = data[id]);
+            isOriginal = !isOriginal;
+        });
+    </script>
+</body>
+</html>

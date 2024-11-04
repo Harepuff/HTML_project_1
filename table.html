@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Таблица</title>
+  <style>
+    table, th, td {
+        font-size: 25px;
+        margin-left: 30px;
+        margin-right: 20px;
+        border: 1px solid;
+        border-collapse: collapse;
+    }
+
+    th {
+        height: 70px;
+    }
+    desc {
+        width: 50%
+    }
+    #head {
+        width: 20%;
+    }
+  </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Главная страница</a>
+        <a href="lists.html" title="Списки">Список товаров</a>
+        <a class="active" href="table.html">Таблица</a>
+        <a href="personal_data.html" title="Отправка личных данных">Обратная связь</a>
+        <a href="original_data.html" title="Отправка оригинальных данных">Заказать у нас</a>
+        <a href="pink_list.html" class="imag"><img src="img/mish.png" height="46"></a>
+        <a href="index.html#head">Ссылка на закладку</a>
+        <br><br><br>
+        <a href="passport.html">Паспорт</a>
+        <a href="passport_dom.html" title="Скриншот">DOM (паспорт)</a>
+        <a href="passport_change.html">Паспорт (изменяющийся)</a>
+        <a href="alg_problem.html">Алгоритмическая задача</a>
+        <a href="https://www.hse.ru/" target="_blank">Внешняя ссылка</a>
+    </div>
+    <br>
+    <table background="img/table_back.jpg">
+        <tr>
+            <th id="head">Модель</th>
+            <th>Внешний вид</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td style="padding-left: 2%;">Классическая</td>
+            <td align="center"><img src="img/table_1.jpg" height="200"></td>
+            <td class="descr" style="padding-left: 2%">
+                Классическое устройство ввода с двумя основными кнопками и колесиком для прокрутки, 
+                подходящее для офисной работы и повседневных задач.</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2%;">Игровая</td>
+            <td align="center"><img src="img/table_2.jpg" height="200"></td>
+            <td class="descr" style="padding-left: 2%;">
+                Обладает высокой чувствительностью, настраиваемыми кнопками и часто подсветкой, 
+                что делает её идеальной для геймеров.</td>
+        </tr>
+        <tr>
+            <td style="padding-left: 2%;">Вертикальная</td>
+            <td align="center"><img src="img/table_3.jpg" height="200"></td>
+            <td class="descr" style="padding-left: 2%;">
+                Имеет особую форму, которая позволяет держать кисть в более естественном положении, 
+                снижая нагрузку на запястье.</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center" height="100px">
+                Понравилась одна из моделей? Успейте <a href="original_data.html" title="заказ">заказать</a> по выгодным ценам!</td>
+        </tr>
+    </table>
+    <p align="center"><a href="#head">Вернуться в начало страницы</a></p>
+</body>
+</html>

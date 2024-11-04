@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Заказ товара</title>
+        <style>
+            input[type='number']{
+                width: 60px;
+            } 
+        </style>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="index.html">Главная страница</a>
+            <a href="lists.html" title="Списки">Список товаров</a>
+            <a href="table.html">Таблица</a>
+            <a href="personal_data.html" title="Отправка личных данных">Обратная связь</a>
+            <a class="active" href="original_data.html" title="Отправка оригинальных данных">Заказать у нас</a>
+            <a href="pink_list.html" class="imag"><img src="img/mish.png" height="46"></a>
+            <a href="index.html#head">Ссылка на закладку</a>
+            <br><br><br>
+            <a href="passport.html">Паспорт</a>
+            <a href="passport_dom.html" title="Скриншот">DOM (паспорт)</a>
+            <a href="passport_change.html">Паспорт (изменяющийся)</a>
+            <a href="alg_problem.html">Алгоритмическая задача</a>
+            <a href="https://www.hse.ru/" target="_blank">Внешняя ссылка</a>
+
+        </div>
+        <h1 align="center">Оформление заказа</h1>
+        <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank" onreset="setTimeout(setCurrentDate, 0)">
+            <input type="hidden" name="q" value="search">
+            <p>Имя: <input type="Text" name="name" size=15  value="Иван"></p>
+            <p>Фамилия: <input type="Text" name="last_name" size=15  value="Петров"></p>
+            <p>Модель:</p>
+            <p><input type="checkbox" name="model_classic"> Классическая</p>
+            <p><input type="checkbox" name="model_game"> Игровая</p>
+            <p><input type="checkbox" name="model_vert"> Вертикальная</p>
+            <p>Количество: <input type="number" name="num" min="1" value="1" size="1"></p>
+            <p>Доставка:</p>
+            <p><input type="radio" name="delivery_shop"> В магазин</p>
+            <p><input type="radio" name="delivery_house"> В квартиру</p>
+            <p>Секретный промокод: <input type="password" size=15 name="pass" value="example"></p>
+            <p>Дата заказа: <input type="date" name="date" id="date" value=""></p>
+            <p><input type="reset" name="res" value="Сбросить данные">
+               <input type="submit" name="submit" value="Отправить данные">
+            </p>
+            
+        </form>
+        <script>
+            const setCurrentDate = () => document.getElementById("date").value = new Date().toISOString().slice(0, 10);
+            setCurrentDate();
+        </script>
+    </body>
+</html>
