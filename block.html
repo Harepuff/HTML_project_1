@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Блоки</title>
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="index.html">Главная страница</a>
+    <a href="lists.html" title="Списки">Список товаров</a>
+    <a href="table.html">Таблица</a>
+    <a href="personal_data.html" title="Отправка личных данных">Обратная связь</a>
+    <a href="original_data.html" title="Отправка оригинальных данных">Заказать у нас</a>
+    <a href="pink_list.html" class="imag"><img src="img/mish.png" height="46"></a>
+    <a href="index.html#head">Ссылка на закладку</a>
+    <br><br><br>
+    <a class="active" href="block.html">Блоки</a>
+    <a href="alg_problem.html">Алгоритмическая задача</a>
+    <a href="https://www.hse.ru/" target="_blank">Внешняя ссылка</a>
+
+  </div>
+  <style>
+    .store-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .product {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .product img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 16px;
+        margin: 10px 0 5px;
+    }
+
+    .product p {
+        margin: 5px 0;
+        color: #666;
+    }
+
+</style>
+</head>
+<body>
+<div class="store-container">
+    <div class="product">
+        <img src="img/block_1.jpg">
+        <h3>Красная мышь</h3>
+        <p>100р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_2.jpg">
+        <h3>Оранжевая мышь</h3>
+        <p>200р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_3.jpg">
+        <h3>Жёлтая мышь</h3>
+        <p>50р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_4.jpg">
+        <h3>Зелёная мышь</h3>
+        <p>150р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_5.jpg">
+        <h3>Голубая мышь</h3>
+        <p>350р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_6.jpg">
+        <h3>Синяя мышь</h3>
+        <p>180р/шт</p>
+    </div>
+    <div class="product">
+        <img src="img/block_7.jpg">
+        <h3>Фиолетовая мышь</h3>
+        <p>120р/шт</p>
+    </div>
+</div>
+
+<button><a href="original_data.html">Заказать</a></button>
+
+</body>
+
+</body> 
+</html>
